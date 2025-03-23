@@ -1,3 +1,7 @@
+// Descripción: Clase para representar una cuenta bancaria con saldo y límite de retiro.
+// Autor: Piero Omar De La Cruz Mancilla
+// Fecha creación: 21/02/2025
+// Fecha última modificación: 23/03/2025
 class CuentaBancaria(
     private var saldo: Double = 0.0,
     private var limiteRetiro: Double = 1000.0
