@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ejercicio1</string>
+    <string name="select_image_prompt">Selecciona una imagen</string>
+    <string name="next_button">Siguiente</string>
+    <string name="back_button">Volver</string>
+    <string name="image_1">Imagen 1</string>
+    <string name="image_2">Imagen 2</string>
+    <string name="image_3">Imagen 3</string>
+</resources>
