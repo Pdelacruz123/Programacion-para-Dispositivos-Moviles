@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ejercicio 2</string>
+    <string name="select_audio">Selecciona una cancion</string>
+    <string name="select_button">Seleccionar</string>
+    <string name="play_button">Reproducir</string>
+    <string name="pause_button">Pausar</string>
+    <string name="back_button">Volver</string>
+
+    <string name="audio_1">Radiohead - No Surprises</string>
+    <string name="audio_2">Jim Croce - Time In A Bottle</string>
+    <string name="audio_3">Like Him</string>
+    <string name="audio_4">Chick Habit</string>
+    <string name="audio_5">Pantera Blue - Lágrima (Visualizer)</string>
+
+</resources>
