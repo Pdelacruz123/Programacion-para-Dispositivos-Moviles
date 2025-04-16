@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ejercicio1</string>
+    <string name="titulo_editor_perfil">Editor de Perfil</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_edad">Edad</string>
+    <string name="hint_ciudad">Ciudad</string>
+    <string name="hint_correo">Correo electrónico</string>
+    <string name="btn_continuar">Continuar</string>
+    <string name="toast_perfil_guardado">Perfil guardado correctamente</string>
+
+    <string name="titulo_resumen_perfil">Resumen del Perfil</string>
+    <string name="texto_verifica_datos">Por favor verifica que la información sea correcta:</string>
+    <string name="label_edad">Edad: </string>
+    <string name="label_ciudad">Ciudad: </string>
+    <string name="label_correo">Correo: </string>
+    <string name="btn_volver">Volver a editar</string>
+    <string name="btn_confirmar">Confirmar</string>
+</resources>
