@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_editor_perfil"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/hint_nombre"
+        android:layout_marginBottom="12dp"
+        android:maxWidth="400dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/hint_edad"
+        android:layout_marginBottom="12dp"
+        android:maxWidth="400dp"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/etCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/hint_ciudad"
+        android:layout_marginBottom="12dp"
+        android:maxWidth="400dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/hint_correo"
+        android:layout_marginBottom="24dp"
+        android:maxWidth="400dp"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_continuar"
+        android:minHeight="48dp"
+        android:minWidth="150dp"
+        android:layout_gravity="center" />
+</LinearLayout>
