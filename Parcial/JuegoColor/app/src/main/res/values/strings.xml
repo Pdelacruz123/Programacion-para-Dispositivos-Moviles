@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JuegoColor</string>
+
+    <!-- Título y descripciones de la pantalla de bienvenida -->
+    <string name="game_title">¡Acierta El Color!</string>
+    <string name="welcome_description">Pulsa el botón para comenzar el juego. Intenta presionar el color correcto en cada desafío.</string>
+    <string name="start_game">Iniciar juego</string>
+
+    <!-- Cadenas utilizadas en la pantalla del juego -->
+    <string name="points_text">Puntos: %1$d</string>
+    <string name="time_left">Tiempo: %1$d s</string>
+
+    <!-- Cadenas para la pantalla de resultados -->
+    <string name="final_score_text">Tu puntaje: %1$d</string>
+    <string name="best_score_text">Mejor puntaje: %1$d</string>
+    <string name="feedback_excellent">¡Excelente!</string>
+    <string name="feedback_good">¡Muy bien!</string>
+    <string name="feedback_practice">¡Sigue practicando!</string>
+    <string name="play_again">Volver a jugar</string>
+    <string name="timer_text">Tiempo: %1$d s</string>
+
+</resources>

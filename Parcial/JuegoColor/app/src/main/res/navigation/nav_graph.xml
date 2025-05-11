@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+    <!--
+         Archivo: nav_graph.xml
+         Autor: Piero De La Cruz
+         Fecha: 10/05/2025
+
+         Descripción:
+         Archivo de navegación para la aplicación JuegoColor. Define las rutas entre WelcomeFragment,
+         GameFragment y ResultFragment, así como los argumentos necesarios para la navegación .
+    -->
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.juegocolor.WelcomeFragment"
+        android:label="Bienvenido">
+        <action
+            android:id="@+id/action_welcomeFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.juegocolor.GameFragment"
+        android:label="Juego">
+        <action
+            android:id="@+id/action_gameFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.juegocolor.ResultFragment"
+        android:label="Resultado">
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_resultFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+
+</navigation>

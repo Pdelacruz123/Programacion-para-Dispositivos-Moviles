@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!--
+        Archivo: fragment_game.xml
+        Autor: Piero De La Cruz Mancilla
+        Fecha: 10/05/2025
+
+        Descripción:
+        Este layout define la interfaz de la pantalla de juego en la aplicación JuegoColor.
+        Incluye:
+          - Una vista para mostrar el color a adivinar (inicialmente rojo) que se actualizará en el código.
+          - Un TextView para mostrar el puntaje (marcador).
+          - Un TextView para mostrar el temporizador (tiempo restante).
+          - Una fila de botones que permiten seleccionar entre cuatro opciones de color (Rojo, Verde, Azul, Amarillo).
+    -->
+    <!-- Vista para mostrar el color a adivinar. Color de inicio; se actualizará en el código -->
+    <View
+        android:id="@+id/viewColorDisplay"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/red"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Marcador de puntaje -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntos: 0"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/viewColorDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Temporizador -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo: 30s"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/viewColorDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Fila de botones para las opciones de color -->
+    <!-- Los botones se distribuyen equitativamente usando un ancho de 0dp en un ConstraintLayout -->
+
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rojo"
+        app:layout_constraintTop_toBottomOf="@id/tvScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnGreen"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnGreen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Verde"
+        app:layout_constraintTop_toBottomOf="@id/tvScore"
+        app:layout_constraintStart_toEndOf="@id/btnRed"
+        app:layout_constraintEnd_toStartOf="@+id/btnBlue"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Azul"
+        app:layout_constraintTop_toBottomOf="@id/tvScore"
+        app:layout_constraintStart_toEndOf="@id/btnGreen"
+        app:layout_constraintEnd_toStartOf="@+id/btnYellow"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnYellow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Amarillo"
+        app:layout_constraintTop_toBottomOf="@id/tvScore"
+        app:layout_constraintStart_toEndOf="@id/btnBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

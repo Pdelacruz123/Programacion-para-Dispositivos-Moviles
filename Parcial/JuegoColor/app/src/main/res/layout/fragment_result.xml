@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!--
+    Archivo: fragment_result.xml
+    Autor: Piero De La Cruz Mancilla
+    Fecha: 10/05/2025
+
+    Descripción:
+    Este layout define la interfaz de la pantalla de resultados en la aplicación JuegoColor.
+    Muestra el puntaje final obtenido, el mejor puntaje o récord, y un mensaje de retroalimentación
+    (por defecto definido en strings.xml). Además, incluye un botón que permite reiniciar el juego,
+    regresando a la pantalla de bienvenida.
+-->
+    <!-- Puntaje final -->
+    <TextView
+        android:id="@+id/tvFinalScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tu puntaje: 0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Mejor puntaje / récord -->
+    <TextView
+        android:id="@+id/tvBestScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mejor puntaje: 0"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tvFinalScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Mensaje de retroalimentación -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback_practice"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tvBestScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botón para reiniciar el juego -->
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_again"
+        app:layout_constraintTop_toBottomOf="@id/tvMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
