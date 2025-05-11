@@ -1,0 +1,25 @@
+# Archivos y configuraciones de IntelliJ/Android Studio
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Archivos y carpetas de Gradle y compilación
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Configuración local (no compartir el sdk path ni configuraciones locales)
+local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
